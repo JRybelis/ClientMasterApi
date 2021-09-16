@@ -154,6 +154,7 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientMaster.db" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
