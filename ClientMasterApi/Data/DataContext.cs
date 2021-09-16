@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Data.SQLite;
+using System.Data.SQLite.EF6;
 using Core.Models;
 
 
@@ -18,6 +19,10 @@ namespace ClientMasterApi.Data
 
         }
 
+        public static DataContext Create()
+        {
+            return new DataContext();
+        }
         public DbSet<Client> Clients { get; set; }
 
         protected override void OnModelCreating (DbModelBuilder modelBuilder)
